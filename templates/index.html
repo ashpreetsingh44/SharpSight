@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blur Image Detector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Blur Image Detection System</h1>
+    <p>Upload multiple images to check whether they are blurry or not using Laplacian variance method.</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="images" multiple required>
+        <br><br>
+        <button type="submit">Check Blur</button>
+    </form>
+
+    <p class="note">After upload, Excel report will be downloaded automatically.</p>
+</div>
+
+</body>
+</html>
