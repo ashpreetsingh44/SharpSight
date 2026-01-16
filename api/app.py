@@ -11,7 +11,7 @@ app = Flask(
 )
 
 
-def is_blurry(image_bytes, threshold=300.0):
+def is_blurry(image_bytes, threshold=100.0):
     npimg = np.frombuffer(image_bytes, np.uint8)
     image = cv2.imdecode(npimg, cv2.IMREAD_COLOR)
 
